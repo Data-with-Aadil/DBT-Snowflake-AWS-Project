@@ -1,0 +1,8 @@
+sources:
+  - name: STAGING
+    database: AIRBNB_PRO
+    schema: STAGING
+    tables:
+        - name: bookings
+        - name: hosts
+        - name: listings
