@@ -1,0 +1,23 @@
+Here is how to fix it:
+
+    1. The Quick Fix: Reload VS Code
+    Since you have fixed your configuration files, you just need to force the extension to restart and read them again.
+
+    Press Cmd + Shift + P (Command Palette).
+
+    Type "Reload Window" and press Enter.
+
+    Wait for the extension to load (look for the "dbt" icon in the bottom status bar).
+
+    Try compiling or previewing your SQL again.
+
+2. Verify Python Interpreter
+    If reloading doesn't work, the extension might be looking at the wrong Python environment (one where dbt isn't installed or is a different version).
+
+    Press Cmd + Shift + P.
+
+    Type "Python: Select Interpreter".
+
+    Crucial: Select the interpreter inside your project's virtual environment (.venv or venv). It usually has a star or says "Recommended".
+
+    Look for: ./.venv/bin/python

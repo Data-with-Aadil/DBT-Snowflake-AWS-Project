@@ -1,2 +1,5 @@
 -- testing the reference macro
-select * from {{ ref('bookings') }}
+
+{% set nights_booked = 1%}
+
+select * from {{ ref('bookings') }} where nights_booked > {{ nights_booked }}

@@ -1,3 +1,17 @@
+version: 2
+
 models:
-  - name: BRONZE
-    materialized: view
+  - name: bookings             # Matches bookings.sql
+    config:
+      materialized: view
+      schema: semi_raw
+
+  - name: hosts                # Matches hosts.sql
+    config:
+      materialized: view
+      schema: semi_raw
+
+  - name: listings             # Matches listings.sql
+    config:
+      materialized: view
+      schema: semi_raw
