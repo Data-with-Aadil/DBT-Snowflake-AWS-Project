@@ -43,3 +43,7 @@ models:
       +schema: gold
       ephemeral:
         +materialized: ephemeral
+
+seeds:
+  dbt_snowflake_aws_project:
+    +schema: bronze
