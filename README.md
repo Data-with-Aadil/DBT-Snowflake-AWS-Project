@@ -30,7 +30,8 @@ Source Data (CSV) → AWS S3 → Snowflake (Staging) → Bronze Layer → Silver
   - Snapshots (SCD Type 2)
   - Custom macros
   - Jinja templating
-  - Testing and documentation
+  - Testing(Singular and Generic) and documentation
+  - Seeds and Freshness
 
 ## 📊 Data Model
 
