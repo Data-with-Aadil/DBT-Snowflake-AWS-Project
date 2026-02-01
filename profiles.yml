@@ -1,37 +1,39 @@
 aadil_dbt:
   outputs:
     dev:
-      catalog: dbt_learning_catalog
-      host: dbc-76aa188c-9424.cloud.databricks.com
-      http_path: /sql/1.0/warehouses/5f899a64caea63a5
-      schema: dbt_learning
+      catalog: sample_catalog
+      host: example-databricks-host.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/XXXXXXXXXXXX
+      schema: sample_schema
       threads: 1
-      token: dapiaebfb194509f65fa46c650c290655d4d
+      token: DUMMY_DATABRICKS_TOKEN
       type: databricks
   target: dev
+
 aws_dbt_snowflake_project:
   outputs:
     dev:
-      account: BMDPGER-RV28327
-      database: AIRBNB
-      password: Aadil@12345678
-      role: ACCOUNTADMIN
-      schema: dbt_schema
+      account: SAMPLE_ACCOUNT_ID
+      database: SAMPLE_DATABASE
+      password: DUMMY_PASSWORD
+      role: SAMPLE_ROLE
+      schema: sample_schema
       threads: 1
       type: snowflake
-      user: AADIL111
-      warehouse: COMPUTE_WH
+      user: SAMPLE_USER
+      warehouse: SAMPLE_WAREHOUSE
   target: dev
+
 dbt_snowflake_aws_project:
   outputs:
     dev:
-      account: BMDPGER-RV28327
-      database: AIRBNB_PRO
-      password: Aadil@12345678
-      role: ACCOUNTADMIN
-      schema: dbt_schema
+      account: SAMPLE_ACCOUNT_ID
+      database: SAMPLE_DATABASE_PRO
+      password: DUMMY_PASSWORD
+      role: SAMPLE_ROLE
+      schema: sample_schema
       threads: 1
       type: snowflake
-      user: AADIL111
-      warehouse: COMPUTE_WH
+      user: SAMPLE_USER
+      warehouse: SAMPLE_WAREHOUSE
   target: dev
