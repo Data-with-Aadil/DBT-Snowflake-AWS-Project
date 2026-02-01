@@ -1,0 +1,30 @@
+-- back compat for old kwarg name
+  
+  begin;
+    
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into AIRBNB_PRO.silver.silver_bookings as DBT_INTERNAL_DEST
+        using AIRBNB_PRO.silver.silver_bookings__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.BOOKING_ID = DBT_INTERNAL_DEST.BOOKING_ID))
+
+    
+    when matched then update set
+        "BOOKING_ID" = DBT_INTERNAL_SOURCE."BOOKING_ID","LISTING_ID" = DBT_INTERNAL_SOURCE."LISTING_ID","BOOKING_DATE" = DBT_INTERNAL_SOURCE."BOOKING_DATE","BOOKING_STATUS" = DBT_INTERNAL_SOURCE."BOOKING_STATUS","TOTAL_BOOKING_AMOUNT" = DBT_INTERNAL_SOURCE."TOTAL_BOOKING_AMOUNT","TOTAL_FEE_AMOUNT" = DBT_INTERNAL_SOURCE."TOTAL_FEE_AMOUNT","CREATED_AT" = DBT_INTERNAL_SOURCE."CREATED_AT"
+    
+
+    when not matched then insert
+        ("BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "BOOKING_STATUS", "TOTAL_BOOKING_AMOUNT", "TOTAL_FEE_AMOUNT", "CREATED_AT")
+    values
+        ("BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "BOOKING_STATUS", "TOTAL_BOOKING_AMOUNT", "TOTAL_FEE_AMOUNT", "CREATED_AT")
+
+;
+    commit;

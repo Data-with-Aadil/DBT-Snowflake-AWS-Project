@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table AIRBNB_PRO.bronze.lookup (customer_id integer, customer_name text, customer_email text)
+  ;
+    -- dbt seed --
+    
+            insert into AIRBNB_PRO.bronze.lookup (customer_id,  customer_name,  customer_email) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+        
+
+;
+  

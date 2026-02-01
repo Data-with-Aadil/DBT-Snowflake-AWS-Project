@@ -1,0 +1,8 @@
+
+
+SELECT 
+    1
+FROM 
+    AIRBNB_PRO.STAGING.bookings
+WHERE 
+    BOOKING_AMOUNT < 200

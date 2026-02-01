@@ -1,0 +1,8 @@
+
+
+SELECT 
+    BOOKING_ID, 
+    COUNT(*)
+FROM AIRBNB_PRO.STAGING.bookings
+GROUP BY 1
+HAVING COUNT(*) > 1
