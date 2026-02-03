@@ -24372,3 +24372,564 @@ schema: "bronze"
 [0m22:59:00.232686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1502f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c150320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1c3710>]}
 [0m22:59:00.232832 [debug] [MainThread]: Flushing usage events
 [0m22:59:01.814912 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:21:21.919224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074d4ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c4bfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c4bf20>]}
+
+
+============================== 14:21:21.924963 | 4d4db584-e306-438d-b02e-caeefd985104 ==============================
+[0m14:21:21.924963 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:21:21.925369 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'profiles_dir': '/Users/aadil.mansoori/.dbt', 'static_parser': 'True', 'empty': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'write_json': 'True', 'printer_width': '80', 'log_path': '/Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/logs', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'debug': 'False', 'quiet': 'False', 'target_path': 'None', 'warn_error': 'None', 'cache_selected_only': 'False', 'version_check': 'True', 'use_colors': 'True'}
+[0m14:21:22.921656 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:21:22.922828 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:21:22.923311 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:21:23.081522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b64e0>]}
+[0m14:21:23.125986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dacbf0>]}
+[0m14:21:23.128731 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m14:21:23.236705 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:21:23.480562 [warn ] [MainThread]: [[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `freshness` as a top-level property of `sources[0].tables[0]` in file
+`models/bronze/sources/sources.yml`. The `freshness` top-level property should
+be moved into the `config` of `sources[0].tables[0]`.
+[0m14:21:23.481268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c4bf80>]}
+[0m14:21:24.408674 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:21:24.409021 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:21:24.409236 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:21:24.448321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095eba40>]}
+[0m14:21:24.592754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae95a60>]}
+[0m14:21:24.593153 [info ] [MainThread]: Found 11 models, 4 analyses, 4 data tests, 1 seed, 3 snapshots, 3 sources, 526 macros
+[0m14:21:24.593356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adf6000>]}
+[0m14:21:24.594977 [info ] [MainThread]: 
+[0m14:21:24.595177 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:21:24.595323 [info ] [MainThread]: 
+[0m14:21:24.595607 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:21:24.598384 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_PRO_silver'
+[0m14:21:26.605389 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_PRO_silver"
+[0m14:21:26.605854 [debug] [ThreadPool]: On list_AIRBNB_PRO_silver: show objects in AIRBNB_PRO.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_snowflake_aws_project", "target_name": "dev", "connection_name": "list_AIRBNB_PRO_silver"} */;
+[0m14:21:26.606093 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:21:28.200394 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.594 seconds
+[0m14:21:28.204908 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_PRO_silver, now list_AIRBNB_PRO_semi_raw)
+[0m14:21:28.209988 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_PRO_semi_raw"
+[0m14:21:28.210453 [debug] [ThreadPool]: On list_AIRBNB_PRO_semi_raw: show objects in AIRBNB_PRO.semi_raw
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_snowflake_aws_project", "target_name": "dev", "connection_name": "list_AIRBNB_PRO_semi_raw"} */;
+[0m14:21:28.361049 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.150 seconds
+[0m14:21:28.362144 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_PRO_semi_raw, now list_AIRBNB_PRO_gold)
+[0m14:21:28.363618 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_PRO_gold"
+[0m14:21:28.363801 [debug] [ThreadPool]: On list_AIRBNB_PRO_gold: show objects in AIRBNB_PRO.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_snowflake_aws_project", "target_name": "dev", "connection_name": "list_AIRBNB_PRO_gold"} */;
+[0m14:21:28.504985 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.141 seconds
+[0m14:21:28.508081 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_PRO_gold, now list_AIRBNB_PRO_bronze)
+[0m14:21:28.512078 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_PRO_bronze"
+[0m14:21:28.512439 [debug] [ThreadPool]: On list_AIRBNB_PRO_bronze: show objects in AIRBNB_PRO.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_snowflake_aws_project", "target_name": "dev", "connection_name": "list_AIRBNB_PRO_bronze"} */;
+[0m14:21:28.617841 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.105 seconds
+[0m14:21:28.622274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d4db584-e306-438d-b02e-caeefd985104', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9f9b50>]}
+[0m14:21:28.639617 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.bookings
+[0m14:21:28.640306 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_AIRBNB_PRO_bronze, now model.dbt_snowflake_aws_project.bookings)
+[0m14:21:28.640747 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.bookings
+[0m14:21:28.649731 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.bookings"
+[0m14:21:28.653668 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.bookings
+[0m14:21:28.654257 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.bookings
+[0m14:21:28.654585 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.facts
+[0m14:21:28.654988 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.bookings, now model.dbt_snowflake_aws_project.facts)
+[0m14:21:28.655433 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.facts
+[0m14:21:28.660080 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.facts"
+[0m14:21:28.662653 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.facts
+[0m14:21:28.663117 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.facts
+[0m14:21:28.663383 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.hosts
+[0m14:21:28.663657 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.facts, now model.dbt_snowflake_aws_project.hosts)
+[0m14:21:28.663907 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.hosts
+[0m14:21:28.665947 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.hosts"
+[0m14:21:28.667890 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.hosts
+[0m14:21:28.668320 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.hosts
+[0m14:21:28.668571 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.listings
+[0m14:21:28.668846 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.hosts, now model.dbt_snowflake_aws_project.listings)
+[0m14:21:28.669127 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.listings
+[0m14:21:28.671065 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.listings"
+[0m14:21:28.672800 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.listings
+[0m14:21:28.673201 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.listings
+[0m14:21:28.673449 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.obt
+[0m14:21:28.673716 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.listings, now model.dbt_snowflake_aws_project.obt)
+[0m14:21:28.673981 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.obt
+[0m14:21:28.677948 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.obt"
+[0m14:21:28.679886 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.obt
+[0m14:21:28.680228 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.obt
+[0m14:21:28.680448 [debug] [Thread-2 (]: Began running node seed.dbt_snowflake_aws_project.lookup
+[0m14:21:28.680688 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.obt, now seed.dbt_snowflake_aws_project.lookup)
+[0m14:21:28.680914 [debug] [Thread-2 (]: Began compiling node seed.dbt_snowflake_aws_project.lookup
+[0m14:21:28.682106 [debug] [Thread-2 (]: Began executing node seed.dbt_snowflake_aws_project.lookup
+[0m14:21:28.682439 [debug] [Thread-2 (]: Finished running node seed.dbt_snowflake_aws_project.lookup
+[0m14:21:28.682651 [debug] [Thread-2 (]: Began running node test.dbt_snowflake_aws_project.generic_tests_no_duplicate
+[0m14:21:28.682911 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.dbt_snowflake_aws_project.lookup, now test.dbt_snowflake_aws_project.generic_tests_no_duplicate)
+[0m14:21:28.683143 [debug] [Thread-2 (]: Began compiling node test.dbt_snowflake_aws_project.generic_tests_no_duplicate
+[0m14:21:28.685030 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_snowflake_aws_project.generic_tests_no_duplicate"
+[0m14:21:28.687010 [debug] [Thread-2 (]: Began executing node test.dbt_snowflake_aws_project.generic_tests_no_duplicate
+[0m14:21:28.687366 [debug] [Thread-2 (]: Finished running node test.dbt_snowflake_aws_project.generic_tests_no_duplicate
+[0m14:21:28.687589 [debug] [Thread-2 (]: Began running node test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2
+[0m14:21:28.687821 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_snowflake_aws_project.generic_tests_no_duplicate, now test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2)
+[0m14:21:28.688018 [debug] [Thread-2 (]: Began compiling node test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2
+[0m14:21:28.694776 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2"
+[0m14:21:28.697572 [debug] [Thread-2 (]: Began executing node test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2
+[0m14:21:28.697891 [debug] [Thread-2 (]: Finished running node test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2
+[0m14:21:28.698087 [debug] [Thread-2 (]: Began running node test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30
+[0m14:21:28.698287 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_snowflake_aws_project.source_not_null_STAGING_bookings_booking_id.fbc6529cf2, now test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30)
+[0m14:21:28.698467 [debug] [Thread-2 (]: Began compiling node test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30
+[0m14:21:28.702757 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30"
+[0m14:21:28.703580 [debug] [Thread-2 (]: Began executing node test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30
+[0m14:21:28.703865 [debug] [Thread-2 (]: Finished running node test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30
+[0m14:21:28.704039 [debug] [Thread-2 (]: Began running node test.dbt_snowflake_aws_project.tests_booking
+[0m14:21:28.704217 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_snowflake_aws_project.source_unique_STAGING_bookings_booking_id.619b64bc30, now test.dbt_snowflake_aws_project.tests_booking)
+[0m14:21:28.704377 [debug] [Thread-2 (]: Began compiling node test.dbt_snowflake_aws_project.tests_booking
+[0m14:21:28.705797 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_snowflake_aws_project.tests_booking"
+[0m14:21:28.706866 [debug] [Thread-2 (]: Began executing node test.dbt_snowflake_aws_project.tests_booking
+[0m14:21:28.707138 [debug] [Thread-2 (]: Finished running node test.dbt_snowflake_aws_project.tests_booking
+[0m14:21:28.707309 [debug] [Thread-2 (]: Began running node analysis.dbt_snowflake_aws_project.if_else_jinja
+[0m14:21:28.707477 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_snowflake_aws_project.tests_booking, now analysis.dbt_snowflake_aws_project.if_else_jinja)
+[0m14:21:28.707634 [debug] [Thread-2 (]: Began compiling node analysis.dbt_snowflake_aws_project.if_else_jinja
+[0m14:21:28.709438 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.dbt_snowflake_aws_project.if_else_jinja"
+[0m14:21:28.711543 [debug] [Thread-2 (]: Began executing node analysis.dbt_snowflake_aws_project.if_else_jinja
+[0m14:21:28.711823 [debug] [Thread-2 (]: Finished running node analysis.dbt_snowflake_aws_project.if_else_jinja
+[0m14:21:28.712000 [debug] [Thread-2 (]: Began running node analysis.dbt_snowflake_aws_project.incremental_load_m
+[0m14:21:28.712173 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.dbt_snowflake_aws_project.if_else_jinja, now analysis.dbt_snowflake_aws_project.incremental_load_m)
+[0m14:21:28.712333 [debug] [Thread-2 (]: Began compiling node analysis.dbt_snowflake_aws_project.incremental_load_m
+[0m14:21:28.714597 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.dbt_snowflake_aws_project.incremental_load_m"
+[0m14:21:28.715376 [debug] [Thread-2 (]: Began executing node analysis.dbt_snowflake_aws_project.incremental_load_m
+[0m14:21:28.715631 [debug] [Thread-2 (]: Finished running node analysis.dbt_snowflake_aws_project.incremental_load_m
+[0m14:21:28.715789 [debug] [Thread-2 (]: Began running node analysis.dbt_snowflake_aws_project.ref
+[0m14:21:28.715959 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.dbt_snowflake_aws_project.incremental_load_m, now analysis.dbt_snowflake_aws_project.ref)
+[0m14:21:28.716127 [debug] [Thread-2 (]: Began compiling node analysis.dbt_snowflake_aws_project.ref
+[0m14:21:28.717514 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.dbt_snowflake_aws_project.ref"
+[0m14:21:28.718212 [debug] [Thread-2 (]: Began executing node analysis.dbt_snowflake_aws_project.ref
+[0m14:21:28.718474 [debug] [Thread-2 (]: Finished running node analysis.dbt_snowflake_aws_project.ref
+[0m14:21:28.718641 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.silver_bookings
+[0m14:21:28.718814 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.dbt_snowflake_aws_project.ref, now model.dbt_snowflake_aws_project.silver_bookings)
+[0m14:21:28.718964 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.silver_bookings
+[0m14:21:28.720949 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.silver_bookings"
+[0m14:21:28.721888 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.silver_bookings
+[0m14:21:28.722151 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.silver_bookings
+[0m14:21:28.722313 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.silver_hosts
+[0m14:21:28.722474 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.silver_bookings, now model.dbt_snowflake_aws_project.silver_hosts)
+[0m14:21:28.722623 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.silver_hosts
+[0m14:21:28.723959 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.silver_hosts"
+[0m14:21:28.724851 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.silver_hosts
+[0m14:21:28.725097 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.silver_hosts
+[0m14:21:28.725254 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.silver_listings
+[0m14:21:28.725412 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.silver_hosts, now model.dbt_snowflake_aws_project.silver_listings)
+[0m14:21:28.725557 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.silver_listings
+[0m14:21:28.727301 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.silver_listings"
+[0m14:21:28.728315 [debug] [Thread-2 (]: Began executing node model.dbt_snowflake_aws_project.silver_listings
+[0m14:21:28.728567 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.silver_listings
+[0m14:21:28.728730 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.booking_ephemeral_source
+[0m14:21:28.728893 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.silver_listings, now model.dbt_snowflake_aws_project.booking_ephemeral_source)
+[0m14:21:28.729041 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.booking_ephemeral_source
+[0m14:21:28.730291 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.booking_ephemeral_source"
+[0m14:21:28.731381 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.booking_ephemeral_source
+[0m14:21:28.731539 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.host_ephemeral_source
+[0m14:21:28.731716 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.booking_ephemeral_source, now model.dbt_snowflake_aws_project.host_ephemeral_source)
+[0m14:21:28.731903 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.host_ephemeral_source
+[0m14:21:28.733171 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.host_ephemeral_source"
+[0m14:21:28.734295 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.host_ephemeral_source
+[0m14:21:28.734454 [debug] [Thread-2 (]: Began running node model.dbt_snowflake_aws_project.listing_ephemeral_source
+[0m14:21:28.734617 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.host_ephemeral_source, now model.dbt_snowflake_aws_project.listing_ephemeral_source)
+[0m14:21:28.734788 [debug] [Thread-2 (]: Began compiling node model.dbt_snowflake_aws_project.listing_ephemeral_source
+[0m14:21:28.736104 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_snowflake_aws_project.listing_ephemeral_source"
+[0m14:21:28.737092 [debug] [Thread-2 (]: Finished running node model.dbt_snowflake_aws_project.listing_ephemeral_source
+[0m14:21:28.737244 [debug] [Thread-2 (]: Began running node analysis.dbt_snowflake_aws_project.seeds_
+[0m14:21:28.737401 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_snowflake_aws_project.listing_ephemeral_source, now analysis.dbt_snowflake_aws_project.seeds_)
+[0m14:21:28.737575 [debug] [Thread-2 (]: Began compiling node analysis.dbt_snowflake_aws_project.seeds_
+[0m14:21:28.739716 [debug] [Thread-2 (]: Writing injected SQL for node "analysis.dbt_snowflake_aws_project.seeds_"
+[0m14:21:28.740450 [debug] [Thread-2 (]: Began executing node analysis.dbt_snowflake_aws_project.seeds_
+[0m14:21:28.740688 [debug] [Thread-2 (]: Finished running node analysis.dbt_snowflake_aws_project.seeds_
+[0m14:21:28.740841 [debug] [Thread-2 (]: Began running node snapshot.dbt_snowflake_aws_project.dim_bookings
+[0m14:21:28.740991 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly analysis.dbt_snowflake_aws_project.seeds_, now snapshot.dbt_snowflake_aws_project.dim_bookings)
+[0m14:21:28.741130 [debug] [Thread-2 (]: Began compiling node snapshot.dbt_snowflake_aws_project.dim_bookings
+[0m14:21:28.742470 [debug] [Thread-2 (]: Began executing node snapshot.dbt_snowflake_aws_project.dim_bookings
+[0m14:21:28.742712 [debug] [Thread-2 (]: Finished running node snapshot.dbt_snowflake_aws_project.dim_bookings
+[0m14:21:28.742860 [debug] [Thread-2 (]: Began running node snapshot.dbt_snowflake_aws_project.dim_hosts
+[0m14:21:28.743010 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly snapshot.dbt_snowflake_aws_project.dim_bookings, now snapshot.dbt_snowflake_aws_project.dim_hosts)
+[0m14:21:28.743146 [debug] [Thread-2 (]: Began compiling node snapshot.dbt_snowflake_aws_project.dim_hosts
+[0m14:21:28.744409 [debug] [Thread-2 (]: Began executing node snapshot.dbt_snowflake_aws_project.dim_hosts
+[0m14:21:28.744648 [debug] [Thread-2 (]: Finished running node snapshot.dbt_snowflake_aws_project.dim_hosts
+[0m14:21:28.744792 [debug] [Thread-2 (]: Began running node snapshot.dbt_snowflake_aws_project.dim_listings
+[0m14:21:28.744940 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly snapshot.dbt_snowflake_aws_project.dim_hosts, now snapshot.dbt_snowflake_aws_project.dim_listings)
+[0m14:21:28.745078 [debug] [Thread-2 (]: Began compiling node snapshot.dbt_snowflake_aws_project.dim_listings
+[0m14:21:28.746255 [debug] [Thread-2 (]: Began executing node snapshot.dbt_snowflake_aws_project.dim_listings
+[0m14:21:28.746491 [debug] [Thread-2 (]: Finished running node snapshot.dbt_snowflake_aws_project.dim_listings
+[0m14:21:28.746927 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:21:28.747043 [debug] [MainThread]: Connection 'snapshot.dbt_snowflake_aws_project.dim_listings' was left open.
+[0m14:21:28.747157 [debug] [MainThread]: On snapshot.dbt_snowflake_aws_project.dim_listings: Close
+[0m14:21:28.826015 [debug] [MainThread]: Command end result
+[0m14:21:28.893228 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/manifest.json
+[0m14:21:28.899905 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/semantic_manifest.json
+[0m14:21:28.903651 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/run_results.json
+[0m14:21:28.951340 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m14:21:28.951530 [info ] [MainThread]: Building catalog
+[0m14:21:28.956566 [debug] [ThreadPool]: Acquiring new snowflake connection 'AIRBNB_PRO.information_schema'
+[0m14:21:28.965157 [debug] [ThreadPool]: Using snowflake connection "AIRBNB_PRO.information_schema"
+[0m14:21:28.965645 [debug] [ThreadPool]: On AIRBNB_PRO.information_schema: with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from AIRBNB_PRO.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'facts' and upper("table_name") = upper('facts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'dim_hosts' and upper("table_name") = upper('dim_hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'dim_bookings' and upper("table_name") = upper('dim_bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'silver' and upper("table_schema") = upper('silver')
+
+                    and 
+    "table_name" ilike 'silver_hosts' and upper("table_name") = upper('silver_hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'bookings' and upper("table_name") = upper('bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'silver' and upper("table_schema") = upper('silver')
+
+                    and 
+    "table_name" ilike 'silver_bookings' and upper("table_name") = upper('silver_bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'bronze' and upper("table_schema") = upper('bronze')
+
+                    and 
+    "table_name" ilike 'lookup' and upper("table_name") = upper('lookup')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'semi_raw' and upper("table_schema") = upper('semi_raw')
+
+                    and 
+    "table_name" ilike 'bookings' and upper("table_name") = upper('bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'obt' and upper("table_name") = upper('obt')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'semi_raw' and upper("table_schema") = upper('semi_raw')
+
+                    and 
+    "table_name" ilike 'listings' and upper("table_name") = upper('listings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'silver' and upper("table_schema") = upper('silver')
+
+                    and 
+    "table_name" ilike 'silver_listings' and upper("table_name") = upper('silver_listings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'hosts' and upper("table_name") = upper('hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'dim_listings' and upper("table_name") = upper('dim_listings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'semi_raw' and upper("table_schema") = upper('semi_raw')
+
+                    and 
+    "table_name" ilike 'hosts' and upper("table_name") = upper('hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'listings' and upper("table_name") = upper('listings')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from AIRBNB_PRO.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'facts' and upper("table_name") = upper('facts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'dim_hosts' and upper("table_name") = upper('dim_hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'dim_bookings' and upper("table_name") = upper('dim_bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'silver' and upper("table_schema") = upper('silver')
+
+                    and 
+    "table_name" ilike 'silver_hosts' and upper("table_name") = upper('silver_hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'bookings' and upper("table_name") = upper('bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'silver' and upper("table_schema") = upper('silver')
+
+                    and 
+    "table_name" ilike 'silver_bookings' and upper("table_name") = upper('silver_bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'bronze' and upper("table_schema") = upper('bronze')
+
+                    and 
+    "table_name" ilike 'lookup' and upper("table_name") = upper('lookup')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'semi_raw' and upper("table_schema") = upper('semi_raw')
+
+                    and 
+    "table_name" ilike 'bookings' and upper("table_name") = upper('bookings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'obt' and upper("table_name") = upper('obt')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'semi_raw' and upper("table_schema") = upper('semi_raw')
+
+                    and 
+    "table_name" ilike 'listings' and upper("table_name") = upper('listings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'silver' and upper("table_schema") = upper('silver')
+
+                    and 
+    "table_name" ilike 'silver_listings' and upper("table_name") = upper('silver_listings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'hosts' and upper("table_name") = upper('hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'gold' and upper("table_schema") = upper('gold')
+
+                    and 
+    "table_name" ilike 'dim_listings' and upper("table_name") = upper('dim_listings')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'semi_raw' and upper("table_schema") = upper('semi_raw')
+
+                    and 
+    "table_name" ilike 'hosts' and upper("table_name") = upper('hosts')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'listings' and upper("table_name") = upper('listings')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "dbt_snowflake_aws_project", "target_name": "dev", "connection_name": "AIRBNB_PRO.information_schema"} */
+[0m14:21:28.966016 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:21:35.413422 [debug] [ThreadPool]: SQL status: SUCCESS 144 in 6.447 seconds
+[0m14:21:35.454215 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/catalog.json
+[0m14:21:35.469303 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/manifest.json
+[0m14:21:35.474759 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/semantic_manifest.json
+[0m14:21:35.474918 [info ] [MainThread]: Catalog written to /Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/target/catalog.json
+[0m14:21:35.475290 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:21:35.475610 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 13.642687, "process_in_blocks": "0", "process_kernel_time": 1.101, "process_mem_max_rss": "163348480", "process_out_blocks": "0", "process_user_time": 2.109238}
+[0m14:21:35.475851 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:21:35.475810 after 13.64 seconds
+[0m14:21:35.476000 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:21:35.476117 [debug] [MainThread]: Connection 'AIRBNB_PRO.information_schema' was left open.
+[0m14:21:35.476234 [debug] [MainThread]: On AIRBNB_PRO.information_schema: Close
+[0m14:21:35.557241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10980e660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a83a720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108129250>]}
+[0m14:21:35.557620 [debug] [MainThread]: Flushing usage events
+[0m14:21:36.737261 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:23:05.587877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092a3650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c7c410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c7d520>]}
+
+
+============================== 14:23:05.593057 | ba68d53d-78e9-4302-ad82-2bef6bea0757 ==============================
+[0m14:23:05.593057 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:23:05.593422 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'static_parser': 'True', 'log_path': '/Users/aadil.mansoori/Desktop/AWS_SNOWFLAKE_DBT_PRO_FINAL/dbt_snowflake_aws_project/logs', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'empty': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'quiet': 'False', 'printer_width': '80', 'debug': 'False', 'introspect': 'True', 'profiles_dir': '/Users/aadil.mansoori/.dbt', 'log_cache_events': 'False', 'partial_parse': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:23:06.770885 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:23:06.772008 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:23:06.772487 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:23:06.930284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ba68d53d-78e9-4302-ad82-2bef6bea0757', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5b4f80>]}
+[0m14:23:06.973062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ba68d53d-78e9-4302-ad82-2bef6bea0757', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d63e00>]}
